@@ -1,9 +1,9 @@
 /* ===== CSS Variables ===== */
 :root {
-  --bg-beige-light: #faf7f2;
-  --bg-beige-mid: #ede5d8;
-  --bg-beige-deep: #e0d5c4;
-  --bg-dark: #ede5d8;
+  --bg-beige-light: #e5dac8;
+  --bg-beige-mid: #d4c7b0;
+  --bg-beige-deep: #c4b59a;
+  --bg-dark: #d4c7b0;
   --bg-card: rgba(10, 30, 20, 0.75);
   --bg-card-hover: rgba(15, 45, 30, 0.85);
   --green-900: #052e16;
@@ -63,10 +63,10 @@ a { color: inherit; text-decoration: none; }
   inset: 0;
   z-index: -2;
   background:
-    radial-gradient(ellipse 70% 55% at 15% 8%, rgba(16, 185, 129, 0.1) 0%, transparent 55%),
-    radial-gradient(ellipse 55% 45% at 85% 85%, rgba(5, 150, 105, 0.07) 0%, transparent 50%),
-    radial-gradient(ellipse 60% 50% at 50% 100%, rgba(180, 160, 130, 0.25) 0%, transparent 60%),
-    linear-gradient(165deg, var(--bg-beige-light) 0%, var(--bg-beige-mid) 45%, var(--bg-beige-deep) 100%);
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(16, 120, 90, 0.09) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 55% at 85% 90%, rgba(5, 100, 75, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 100% 90% at 50% 50%, transparent 30%, rgba(90, 75, 55, 0.18) 100%),
+    linear-gradient(168deg, var(--bg-beige-light) 0%, var(--bg-beige-mid) 55%, var(--bg-beige-deep) 100%);
 }
 
 .bg-grid {
@@ -74,10 +74,10 @@ a { color: inherit; text-decoration: none; }
   inset: 0;
   z-index: -1;
   background-image:
-    linear-gradient(rgba(16, 120, 90, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 120, 90, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(16, 90, 65, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 90, 65, 0.07) 1px, transparent 1px);
   background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 70% 70% at 50% 30%, black 20%, transparent 70%);
+  opacity: 0.85;
 }
 
 /* ===== Dark surfaces (cards keep light text on green) ===== */
@@ -128,15 +128,15 @@ a { color: inherit; text-decoration: none; }
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
-  background: rgba(250, 247, 242, 0.82);
+  background: rgba(229, 218, 200, 0.88);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(16, 120, 90, 0.12);
+  border-bottom: 1px solid rgba(16, 90, 65, 0.18);
   transition: background 0.3s, box-shadow 0.3s;
 }
 
 .nav.scrolled {
-  background: rgba(250, 247, 242, 0.95);
-  box-shadow: 0 4px 30px rgba(26, 51, 40, 0.08);
+  background: rgba(212, 199, 176, 0.96);
+  box-shadow: 0 4px 24px rgba(60, 50, 35, 0.12);
 }
 
 .nav-inner {
@@ -372,7 +372,7 @@ a { color: inherit; text-decoration: none; }
   transform: translateX(-50%);
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(16, 120, 90, 0.07) 0%, transparent 70%);
   pointer-events: none;
   animation: pulse-glow 4s ease-in-out infinite;
 }
@@ -389,7 +389,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .section-dark {
-  background: rgba(224, 213, 196, 0.45);
+  background: rgba(180, 165, 140, 0.35);
 }
 
 .section-header {
@@ -1354,7 +1354,7 @@ a { color: inherit; text-decoration: none; }
     top: var(--nav-height);
     left: 0;
     right: 0;
-    background: rgba(250, 247, 242, 0.98);
+    background: rgba(212, 199, 176, 0.98);
     backdrop-filter: blur(20px);
     flex-direction: column;
     padding: 24px;
