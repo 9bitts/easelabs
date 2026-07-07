@@ -194,7 +194,7 @@ a { color: inherit; text-decoration: none; }
 .nav-cta {
   background: rgba(16, 185, 129, 0.15) !important;
   border: 1px solid var(--border-glow) !important;
-  color: var(--green-300) !important;
+  color: var(--green-900) !important;
 }
 
 .nav-cta:hover {
