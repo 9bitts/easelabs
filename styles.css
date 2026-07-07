@@ -454,8 +454,16 @@ a { color: inherit; text-decoration: none; }
 
 .card-lead {
   font-size: 1.05rem;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   color: var(--text-secondary);
+}
+
+.plan-intro {
+  margin-bottom: 32px;
+}
+
+.card-lead:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .card h3 {
