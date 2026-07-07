@@ -857,11 +857,7 @@ a { color: inherit; text-decoration: none; }
 .mf-node-main {
   background: rgba(16, 185, 129, 0.12);
   font-size: 1.1rem;
-}
-
-.mf-node-main small {
   color: var(--green-box);
-  opacity: 0.9;
 }
 
 .mf-node small {
@@ -870,6 +866,12 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.8rem;
   color: var(--text-muted);
   margin-top: 4px;
+}
+
+.mf-node.mf-node-main small {
+  color: var(--green-900);
+  font-weight: 600;
+  opacity: 1;
 }
 
 .mf-arrow {
